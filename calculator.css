@@ -88,3 +88,38 @@ html {
 	letter-spacing: 1px;
 	user-select: none;
 }
+
+.keys span:hover{
+	background: #9c89f6;
+	box-shadow: 0px 4px #6b54d3;
+	color: white;
+}
+
+.top .clear:hover{
+	background: #f68991;
+	box-shadow: 0px 4px #d3545d;
+	color: white;
+}
+
+.keys .eval:hover{
+	background: #abb850;
+	box-shadow: 0px 4px #717a33;
+	color: #fff;	
+}
+
+.keys span:active{
+	box-shadow: 0px 0px #000;
+	top: 4px;
+}
+
+.top .clear:active{
+	box-shadow: 0px 0px #000;
+	top: 4px;
+}
+
+.keys .eval:active{
+	background: #abb850;
+	box-shadow: 0px 0px #000;
+	color: #fff;
+	top: 4px;
+}
