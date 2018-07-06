@@ -19,10 +19,45 @@ html {
 }
 
 #calculator {
+	/*宽度*/
 	width: 325px;
+	/*水平居中*/
 	margin: 100px auto;
+	/*按钮到该div的距离*/
 	padding: 20px 20px 9px;
+	/*背景颜色*/
 	background: #9dd2ea;
+	/*背景渐变色*/
 	background: linear-gradient(#9dd2ea,#8bceec);
+	/*圆角*/
 	border-radius: 3px;
+}
+
+.keys,.top {
+	overflow: hidden;
+}
+
+.keys span,.top .clear {
+	float: left;
+	position: relative;
+	top: 0;
+	width: 66px;
+	height: 36px;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 4px rgba(0,0,0,2);	
+	margin: 0 7px 11px 0;
+	text-align: center;
+	line-height: 36px;
+	color: #888;
+}
+
+.top .screen {
+	height: 40px;
+	width: 212px;
+	float: left;
+	padding: 0,10px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0,0,0,0.2);
 }
