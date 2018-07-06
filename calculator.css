@@ -8,7 +8,8 @@
 * {
 	margin : 0;
 	padding: 0;
-	font: bold 30px Arial;
+	font: bold 14px Arial;
+	box-sizing: border-box;
 }
 
 html {
@@ -50,14 +51,40 @@ html {
 	text-align: center;
 	line-height: 36px;
 	color: #888;
+	/*无法被选中*/
+	user-select: none;
+}
+
+.keys .operator {
+	background: #FFF0F5;
+	margin-right: 0;
+}
+
+.keys .eval {
+	background: #F1FF92;
+	box-shadow: 0px 4px #9DA853;
+	color: #888e5F;
+}
+
+.top .clear {
+	background: #FF9FA8;
+	box-shadow: 0px 4px #FF7C87;
+	color: white;
 }
 
 .top .screen {
 	height: 40px;
 	width: 212px;
 	float: left;
-	padding: 0,10px;
+	padding: 0 10px 0 10px;
 	background: rgba(0,0,0,0.2);
 	border-radius: 3px;
 	box-shadow: inset 0px 4px rgba(0,0,0,0.2);
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-align: right;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	letter-spacing: 1px;
+	user-select: none;
 }
