@@ -19,6 +19,7 @@ for (var i = keys.length - 1; i >= 0; i--) {
 		// 判断当前按钮是不是clear，如果是则清空屏幕
 		if(this.innerHTML == 'C'){
 			screen.innerHTML = "";
+			flag = false;
 		}else if (this.innerHTML == '=') {
 			if(flag){
 				return;
@@ -30,6 +31,11 @@ for (var i = keys.length - 1; i >= 0; i--) {
 		}else{		
 			// 如果是运算符
 			if(this.className == 'operator'){
+				// console.log('test');
+				// 如果屏幕为空，禁止输入运算符的乘法和除法
+				if (screen.innerHTML == '' &&( this.innerHTML == '*' || this.innerHTML == '/')){
+					return;
+				}
 				// 之前是不是运算符
 				if(flag) {
 					return;
