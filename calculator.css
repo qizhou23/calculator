@@ -1,0 +1,28 @@
+/*
+ 1.选择标签
+ 2.样式属性
+ 3.属性名 属性值
+*/
+
+/*清除基本样式*/
+* {
+	margin : 0;
+	padding: 0;
+	font: bold 30px Arial;
+}
+
+html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle,#fff 20%,#ccc);
+	background-size: cover;
+}
+
+#calculator {
+	width: 325px;
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+	background: #9dd2ea;
+	background: linear-gradient(#9dd2ea,#8bceec);
+	border-radius: 3px;
+}
